@@ -1,0 +1,22 @@
+//Ejercicio con for
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int N;
+	float suma = 0, promedio;
+	//pedir y validar valores
+	do {
+		cout << "Ingresar el valor de N: ";
+		cin >> N;
+	} while (N <= 0);
+	//un ciclo for 
+	for (int i = 1; i <= N; i++) //INICIALIZAION, CONDICION, INCREMENTO
+	{ 
+		cout << i << "+";
+		suma = suma + i;
+	//mostrar los resultados 
+	cout << endl << "la suma es : " << suma << endl;
+	return 0;
+}
