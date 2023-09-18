@@ -1,0 +1,19 @@
+//Ejercicio serie 3; Gustavo Calvimontes Nogales 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N, suma = 0;
+    do{
+    cout << "Ingrese el valor de N: ";
+    cin >> N;
+    } while (N <= 0);
+
+    for (int i = 1; i <= N; i++) {
+        suma = suma+ pow(i,2);
+    }
+
+    cout << "La suma de los cuadrados de los primeros " << N << " números es: " << suma << endl;
+
+    return 0;
+}
