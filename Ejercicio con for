@@ -1,0 +1,24 @@
+//Ejercicio con for
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int N, M;
+	float suma = 0, promedio;
+	do{
+	 cout << "ingresa el valor de N:";
+	 cin >> N;
+	}while (N < 0);
+	do {
+		cout << "ingresa el valor de M";
+		cin >> M;
+	} while (M < N);
+	//un ciclo for 
+	for (int i = N; i <= M; i++) //INICIALIZAION, CONDICION, INCREMENTO
+		suma = suma + i;
+	cout << "La suma es: " << suma;
+	promedio = suma / (M - N + 1);
+	cout << "el promedio es : " << promedio;
+	return 0;
+}
