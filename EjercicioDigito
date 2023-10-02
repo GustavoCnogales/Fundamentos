@@ -1,0 +1,29 @@
+// EjercicioDigito.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+
+#include <iostream>
+
+using using System.Collections.Specialized;
+using System.Security.Cryptography.X509Certificates;
+
+namespace std;
+
+int main()
+{
+    int Numero, X, suma = 0, digito;
+    // Entrada con validacion
+    do
+    {
+        Cout << "Ingrese el numero: ";
+        Cin >> Numero;
+    } while (Numero <= 0);
+    //separar en digitos y sumar 
+    while (Numero != 0) //Marca el fin de la repeticion
+    {
+        digito = Numero % 10;
+        suma = suma + digito;
+        Numero = Numero / 10; // la variable de repeticion va a cambiar 
+    }
+    cout << " La suma de los digitos del numero " << X << " es: " << suma;
+}
