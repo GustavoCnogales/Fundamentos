@@ -1,0 +1,42 @@
+// Funcionmayornumeros.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+#include <iostream>
+using namespace std;
+
+
+//Prototipo
+
+int mayorde(int a, int b, int c);
+int main()
+{
+    int num1, num2, num3;
+    do {
+        cout << "Ingresar el primer numero: ";
+        cin >> num1; 
+    } while (num1 < 0);
+    do {
+        cout << "Ingresar el segundo numero: ";
+        cin >> num2; 
+    } while (num2 < 0);
+    do {
+        cout << "Ingresar el tercer numero: ";
+        cin >> num3;
+    } while (num3 < 0);
+    cout << "El numero mayor es " << mayorde(num1, num2, num3);
+}
+
+
+// Declaracion de la funcion 
+
+int mayorde(int a, int b, int c)
+{
+    if ((a > b) && (a > c))
+        return a;
+    if ((b > a) && (b > c))
+        return b;
+    if ((c > a) && (c > b))
+        return c;
+    if ((b > a) && (b > c))
+        return a;
+}
